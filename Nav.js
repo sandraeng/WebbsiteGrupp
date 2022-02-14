@@ -2,7 +2,7 @@ var html =
     '<header class="topmenu">\
     <div class="navflexcontainer">\
     <div class="homelogo">\
-    <a href="Index.html">Hem</a>\
+    <a href="index.html">Hem</a>\
     </div>\
     <nav class="navmenu">\
         <div class="burger">\

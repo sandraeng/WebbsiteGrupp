@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-image">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    
+
+    <title>Document</title>
+    
+</head>
+<body>
+    <nav id="navmenu"></nav>
+    
+    <form id="form">
+    
+    <div class="company-info">
+        <i id="company-info__heading">Företags Info</i>
+         <ul>
+            <li><i class="fa fa-road"></i> Adress</li>
+            <li><i class="fa fa-phone"></i> Phone</li>
+            <li><i class="fa fa-envelope"></i> Mail</li>
+        </ul>
+    </div>
+    <div class="formBox boxstyle">
+        
+        <h1 id="formbox__heading">Kontakt</h1>
+        
+        <div class="formBox__control">
+            <input type="text" id="formbox__nameInput" placeholder="*Namn"/> 
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small id="formBox__nameValidationResult">error</small> 
+        </div>
+        
+        <div class="formBox__control">
+            <input type="text" id="formbox__telephonenrInput" placeholder="*Telefonnummer"/> 
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small id="formBox__telephoneValidationResult">error</small> 
+        </div>
+        
+        <div class="formBox__control">
+            <input type="text" id="formbox__emailInput" placeholder="*Email"/>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small id="formBox__emailValidationResult">error</small> 
+        </div>
+        
+        <div class="formBox__checkboxpos">
+            <p>Vad gäller ditt ärende?</p>
+            <label for="formbox__offertCheckbox">Offert</label>
+            <input type="checkbox" name="formbox__offertCheckbox" id="formbox__offertCheckbox">
+            <label for="formbox__tidsbokningCheckbox">Tidsbokning</label>
+            <input type="checkbox" name="formbox__tidsbokningCheckbox" id="formbox__tidsbokningCheckbox">
+            <label for="formbox__rådgivningCheckbox">Rådgivning</label>
+            <input type="checkbox" name="formbox__rådgivningCheckbox" id="formbox__rådgivningCheckbox"><br>
+            <label for="formbox__annatCheckbox">Annat</label>
+            <input type="checkbox" name="formbox__annatCheckbox" id="formbox__annatCheckbox">
+        </div>
+        <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Meddelande här (frivilligt)"></textarea>
+        
+        <span class="formBox__buttons">
+            <button type="button" class="formBox__buttons-style">Submit
+                <i class="checkmark-container">
+                    <svg x="0px" y="0px" fill="none" stroke="white" visibility="hidden" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                        <path class="check st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                    </svg>
+                </i>
+            </button>
+            <button class="button__download formBox__buttons-style" type="button"><i class="fa fa-download"></i><span>Hämta Inputs</span></button>
+        </span>
+    
+    </div> 
+    </form>
+    
+    <script src="Nav.js"></script>
+    <script src="Contact.js"></script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
